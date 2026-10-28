@@ -1,4 +1,6 @@
-﻿namespace fizzbuzz;
+﻿using System.ComponentModel.Design;
+
+namespace fizzbuzz;
 
 class Program
 {
@@ -8,5 +10,27 @@ class Program
         // Tous les nombres divisibles par 3 seront remplacés par le mot “Fizz”.
         // Tous les nombres divisibles par 5 seront remplacés par le mot “Buzz”.
         // Tous les nombres qui sont divisibles à la fois par 3 et à la fois par 5 seront remplacés par le mot “FizzBuzz”.
+
+
+
+        for(int i = 1; i <= 100; i++)
+        {
+            if (i % 3 == 0 && i % 5 == 0)
+            {
+                Console.WriteLine("FizzBuzz");
+            }
+            else if (i % 3 == 0)
+            {
+                Console.WriteLine("Fizz");
+            }
+            else if(i % 5 == 0)
+            {
+                Console.WriteLine("Buzz");
+            }
+            else
+            {
+                Console.WriteLine(i);
+            }
+        }
     }
 }
